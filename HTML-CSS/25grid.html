@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid in css</title>
+    <style>
+
+        .container {
+            display: grid;
+            /* 1fr means fraction unit  */
+
+            grid-template-columns: 1fr 1fr 2fr;
+              /* OR */
+              /* grid-template-columns: repeat(3,1fr); */
+
+              /* grid-template-columns: minmax(10px, 2fr) minmax(10px, 1fr) minmax(10px, 1fr); */
+            grid-template-rows: 600px 100px 100px;
+
+            /* grid-template-areas: ;  Assignment */
+
+        }
+        .box{
+            /* height: 100px;
+            width:100px; */
+            margin: 10px;
+
+        }
+        .box1{
+            background-color: red;
+            border: 3px solid black ;
+            /* grid-row-start: 3; */
+            grid-column-start: 3;
+            /* align-self: center; */
+            /* for x axis we use align and for y axis we can use justify-self */
+        }
+        .box2{
+            background-color: yellow;
+        }
+        .box3{
+            background-color: green;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Grid in css -->
+    <!-- Row and column in Grid -->
+
+    <div class="container">
+        <div class="box box1"></div>
+        <div class="box box2"></div>
+        <div class="box box3"></div>
+        <div class="box box1"></div>
+        <div class="box box2"></div>
+        <div class="box box3"></div>
+        <div class="box box1"></div>
+        <div class="box box2"></div>
+        <div class="box box3"></div>
+    </div>
+    
+</body>
+</html>

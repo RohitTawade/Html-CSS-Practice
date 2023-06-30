@@ -1,0 +1,16 @@
+body{
+  background-color: #808080;
+
+}
+main p {
+    color: cyan;
+    text-align:center;
+    font-size: 35px;
+    border: 4px dotted rebeccapurple;
+}
+h1 {
+    color:brown;
+    text-align: center;
+    border: 1px solid black;
+    font-size: 45px;
+}

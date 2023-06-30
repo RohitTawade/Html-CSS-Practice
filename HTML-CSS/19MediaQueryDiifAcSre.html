@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Screen Diffrent Screen</title>
+    <style>
+
+        div{
+            text-align: center;
+            font-size: x-large;
+        }
+        /* Extra small devices(Phones,600px and down) */
+        @media only screen and (max-width:600px) {
+            /* This is for phones  */
+
+            body {
+                background-color: red;
+            }
+            div::after{
+                content: 'This is mobile compatable ';
+            }
+
+        }
+        /* small devices (portrait tablets and Large phones, 600px and up) */
+        @media only screen and (min-width:600px) {
+            /*  portrain table and big phones  */
+            body {
+                background-color: aquamarine;
+            }
+            div::after{
+                content: 'Portrait tabler and big phones ';
+            }
+
+
+       }
+    /* Medium Devices (landscape tablets, 768px and up ) */
+    @media only screen and (min-width:768px) {
+
+        /* Tablet */
+
+        body {
+                background-color: blue;
+            }
+            div::after{
+                content: 'Tablets';
+            }
+
+       }
+    /* Large devices (laptops/desktops, 992px and up)  */
+
+    @media only screen and (min-width:992px) {
+        /* Laptops */
+        body {
+                background-color: yellowgreen;
+            }
+            div::after{
+                content: 'laptops';
+            }
+
+      }
+      /* Extra large devices (large laptops and desktops, 1200px and up) */
+
+      @media only screen and (min-width:1200px) {
+           /* large screens */
+
+           body {
+                background-color: violet;
+            }
+            div::after{
+                content: 'Large Screens ';
+            }
+     }
+
+    </style>
+</head>
+<body>
+      <div></div>
+</body>
+</html>

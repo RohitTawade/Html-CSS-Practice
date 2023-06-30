@@ -1,0 +1,30 @@
+/* 1.Universal Selector */
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 1px solid red;
+    background: #000;
+}
+/* 2. Element Selector */
+h1{
+    color: blueviolet;
+    background: #000;
+}
+/* 3. class selector  */
+.pra
+{
+    color: aqua;
+    font-size: 30px;
+    
+}
+/* 4.ID Selector */
+#id1 {
+
+    color: red;
+}
+/* 5.Selector List (,) */
+.pra1,#id2 {
+    color: pink;
+    font-size: 25px;
+}

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo Class </title>
+    <style>
+        /* Pseudo Classes  */
+        .hover:hover{
+            background-color: aqua;
+            color: red;
+        }
+        input:focus{
+            background-color: black;
+            color: red;
+        }
+        a:hover{
+            color: pink;
+        }
+        a:focus{
+            color: brown;
+        }
+        /* a:visited{
+            color: black;
+        } */
+        /* a:first-child{
+            color: yellow;
+        } */
+        a:nth-child(2n  + 1)
+        {
+            background-color: yellow;
+        }
+
+        /* Pseudo Elements  */
+        /* .first-line::first-line{
+            color: violet;
+        } */
+        /* .first-line::first-letter{
+            color: violet;
+        } */
+        /* .first-line::after{
+            color: violet;
+            content: " ~Rohit Tawade";
+           
+        } */
+        .first-line::before{
+            color: violet;
+            content: " ~Rohit Tawade ";
+           
+        }
+        p::selection{
+            color: yellow;
+            background-color: black;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Pseudo Class Selector in Html -->
+
+    <!-- Hover -->
+    <!-- Pseudo classes -->
+    <p class="hover">Hover to Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure, quidem?</p>
+    <input type="text">
+    <hr>
+    <a href="https://www.google.com">Google</a>
+    <a href="https://www.google.com">Google</a>
+    <a href="https://www.google.com">Google</a>
+    <a href="https://www.google.com">Google</a>
+    <a href="https://www.google.com">Google</a>
+    <nav>
+    <a href="https://www.google.com">Google</a>
+    </nav>
+    
+    <hr>
+    <!-- Pseudo Elements -->
+    <p class="first-line">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt earum quas perferendis, modi nisi velit praesentium numquam adipisci eveniet necessitatibus facilis autem maxime provident sapiente dignissimos, rem soluta ut, debitis illum sit alias neque nesciunt saepe. Incidunt earum tempora quasi. Quam illum consectetur necessitatibus iste itaque, dolorum recusandae non mollitia?</p>
+    
+</body>
+</html>

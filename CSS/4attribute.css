@@ -1,0 +1,9 @@
+/* Attribute Selector */
+[target="_blank"]
+{
+    color: brown;
+}
+[alt~="pw1"]
+{
+    background-color: black;
+}

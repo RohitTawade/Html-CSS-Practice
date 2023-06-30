@@ -1,0 +1,15 @@
+body{
+    background-image: url(https://images.pexels.com/photos/2312369/pexels-photo-2312369.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2);
+    background-attachment:fixed;
+    background-size:100%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+h3{
+    color: aqua;
+    text-align: center;
+    text-decoration: underline;
+}
+p{
+  color:#c2df09;
+  
+}

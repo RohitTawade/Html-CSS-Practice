@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Queries</title>
+
+    <style>
+
+        body{
+            background-color: red;
+        }
+        div{
+            font-size: x-large;
+            text-align: center;
+
+        }
+        div::after{
+            content: 'This is Media Queries';
+        }
+
+        
+       
+
+        /* @media (min-width:400px) and (max-width:768px)
+        {
+            body{
+                background-color: yellowgreen;
+            }
+            div::after{
+                content: 'Mid size of device';
+            }
+        } */
+                 /* OR */
+
+                 @media (400px <= width <= 768px){
+                    body{
+                background-color: yellowgreen;
+            }
+            div::after{
+                content: 'Mid size of device';
+            }
+
+                 }
+        
+        @media (min-width:769px) and (max-width:900px){
+            /* if viewport is atleast 900px
+            then this style will apply */
+
+         body{
+            background-color: orange;
+        }
+        div{
+            font-size: x-large;
+
+        }
+        div::after{
+            content: 'Maximum Screen';
+        }
+
+        }
+        
+    
+    </style>
+</head>
+<body>
+
+    <div></div>
+    
+</body>
+</html>

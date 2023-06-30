@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+</head>
+<body>
+    <form  method="get">
+        <fieldset>
+        <legend>User Registration !!</legend>
+    <label for="username">Enter Username: </label>
+    <input type="text" id="username" placeholder="Enter Username" value="Rohit" readonly> <br>
+    <label for="email">Enter Emial: </label>
+    <input type="email" id="email" placeholder="a@example.com" autofocus> <br>
+    <label for="password">Enter Password: </label> 
+    <input type="password" name="password" id="password" placeholder="Enter Password" autofocus> <br>
+    <label for="re_password">Enter Re-Password: </label>
+    <input type="password" name="re_password" id="re_password" placeholder="Enter Re-Password"> <br>
+    Select Gender: <br>
+    <label for="male">Male </label>
+    <input type="radio" name="gender" id="male" value="male"> <br>
+    <label for="female">Female </label>
+    <input type="radio" name="gender" id="female" value="female"> 
+    <br>
+    Select Fev Fruits: <br>
+    <label for="Banana">Banana</label>
+    <input type="checkbox" name="Banana" id="Banana" value="Banana"><br>
+    <label for="Mango">Mango</label>
+    <input type="checkbox" name="Mango" id="Mango" value="Mango"><br>
+    <label for="Graphs">Graphs</label>
+    <input type="checkbox" name="Graphs" id="Graphs" value="Graphs"><br>
+   <label for="salary">Enter Your Salary: </label> 
+   <input type="number" name="salary" id="salary" min="0" max="100000"> <br>
+    <input type="submit" value="Submit">
+</fieldset>
+    </form>
+</body>
+</html>

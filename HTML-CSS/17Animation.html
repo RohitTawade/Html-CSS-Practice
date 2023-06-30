@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation in Html</title>
+    <style>
+        div{
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            position: relative;
+            /* animation-name: colorchange;
+            animation-duration: 3s;
+            animation-delay: 2s;
+            animation-iteration-count: infinite; */
+            /* animation-direction: alternate-reverse; */
+            /* animation-fill-mode: backwards; */
+            /* Last Key frame value perchist color the forwords  ex bgc 100% */
+            /* animation-fill-mode: forwards; */
+            /* start kay frame perchist color start from backwords  */
+
+            /* Above Mentioned Shorthand hare  */
+
+            animation: colorchange 5s linear 2s infinite reverse both;
+            
+
+        }
+        @keyframes colorchange {
+            /* From to animation show and end to animation show  */
+
+            /* from {
+                 background-color:blue;
+                 top: 0px;
+                 left: 0px;
+                 }
+            to { background-color: yellow; 
+                 top: 0px;
+                 left: 100px;  
+            } */
+
+            /* As per Percentage timing we can add animation Transition */
+            0% {
+                 background-color:blue;
+                 top: 0px;
+                 left: 0px;
+                 }
+            25% { background-color: yellow; 
+                 top: 0px;
+                 left: 200px;  
+            }
+            50% { background-color: black; 
+                 top: 200px;
+                 left: 200px;  
+            }
+            75% { background-color: aquamarine; 
+                 top: 200px;
+                 left: 0px;
+                 right: 200px;  
+                 
+            }
+            100% { background-color: violet; 
+                 top: 0px;
+                 left: 0px;  
+            }
+        }
+
+        #ease {
+            animation-timing-function: ease;
+        }
+        #linear {
+            animation-timing-function: linear;
+        }
+        #ease-in {
+            animation-timing-function: ease-in;
+        }
+        #ease-in-out {
+            animation-timing-function: ease-in-out;
+        }
+
+    </style>
+</head>
+<body>
+
+    <!-- Animation in Html -->
+
+    <div>
+        <p>This is going to animate</p>
+    </div>
+   <div id="ease">ease</div>
+   <div id="linear">linear</div>
+   <div id="ease-in">ease-in</div>
+   <div id="ease-in-out">ease-in-out</div>
+</body>
+</html>
